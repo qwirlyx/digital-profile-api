@@ -1,13 +1,27 @@
-import { Injectable } from '@nestjs/common';
-import { Profile } from './profile.type';
+import { Injectable, NotFoundException } from '@nestjs/common';
+import { PrismaService } from '../prisma/prisma.service';
 
 @Injectable()
 export class ProfileService {
-  getProfile(): Profile {
-    return {
-      name: 'Иван Шевченко',
-      description: 'Backend / Fullstack Developer',
-      github: 'https://github.com/qwirlyx',
-    };
+  constructor(private readonly prisma: PrismaService) {}
+
+  async getProfile() {
+    const profile = await this.prisma.profile.findFirst({
+      include: {
+        skills: true,
+        experience: {
+          include: {
+            achievements: true,
+          },
+        },
+        projects: true,
+      },
+    });
+
+    if (!profile) {
+      throw new NotFoundException('Profile not found');
+    }
+
+    return profile;
   }
 }

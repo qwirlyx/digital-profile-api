@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { GraphQLModule } from '@nestjs/graphql';
 import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 import { ProfileModule } from './profile/profile.module';
+import { PrismaModule } from './prisma/prisma.module';
 
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 const { ApolloServerPluginLandingPageLocalDefault } = require(
@@ -16,6 +17,7 @@ const { ApolloServerPluginLandingPageLocalDefault } = require(
       playground: false,
       plugins: [ApolloServerPluginLandingPageLocalDefault()],
     }),
+    PrismaModule,
     ProfileModule,
   ],
 })
