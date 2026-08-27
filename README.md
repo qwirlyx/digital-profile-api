@@ -199,6 +199,97 @@ query {
 }
 ```
 
+## Portfolio projects
+
+### Max-Raffle-Bot
+
+Role:
+Fullstack Developer
+
+Stack:
+PHP, JavaScript, REST API, Telegram API, VK API
+
+Description:
+Мультиплатформенный сервис автоматизации розыгрышей и промо-механик.
+
+Repository:
+https://github.com/qwirlyx/Max-Raffle-Bot-
+
+
+### Response Rate Service
+
+Role:
+Backend Developer
+
+Stack:
+PHP, MySQL, REST API, Webhooks, Cron
+
+Description:
+Сервис аналитики рабочих обсуждений и контроля ответов через Basecamp API.
+
+Repository:
+https://github.com/qwirlyx/Response-Rate-Service
+
+
+### Basecamp Tag Tracker
+
+Role:
+Backend Developer
+
+Stack:
+PHP, REST API, MySQL
+
+Description:
+Сервис синхронизации и отслеживания данных Basecamp.
+
+Repository:
+https://github.com/qwirlyx/Basecamp-Tag-Tracker
+
+
+### Convertor Files
+
+Role:
+Fullstack Developer
+
+Stack:
+PHP, Python, FFmpeg
+
+Description:
+Сервис конвертации файлов между различными форматами.
+
+Repository:
+https://github.com/qwirlyx/Convertor-files
+
+
+### Game Jumping Hink
+
+Role:
+Frontend / Fullstack Developer
+
+Stack:
+JavaScript, PHP, HTML, CSS
+
+Description:
+Веб-игра с игровой механикой и серверной частью.
+
+Repository:
+https://github.com/qwirlyx/Game-jumping-hink
+
+
+### AI Agent
+
+Role:
+AI Engineer / Backend Developer
+
+Stack:
+Python, LLM API, REST API
+
+Description:
+Экспериментальный AI-агент с интеграцией внешних сервисов.
+
+Repository:
+https://github.com/qwirlyx/AI-Agent-
+
 ## Database Model
 
 Основные сущности:

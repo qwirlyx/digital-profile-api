@@ -9,5 +9,11 @@ export class ProjectType {
   description?: string;
 
   @Field({ nullable: true })
+  role?: string;
+
+  @Field({ nullable: true })
+  stack?: string;
+
+  @Field({ nullable: true })
   url?: string;
 }
