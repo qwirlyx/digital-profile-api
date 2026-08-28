@@ -1,5 +1,5 @@
 import { Field, ObjectType } from '@nestjs/graphql';
-import { AchievementType } from './achievement.type';
+import { AchievementType } from './achievement.type.js';
 
 @ObjectType('Experience')
 export class ExperienceType {

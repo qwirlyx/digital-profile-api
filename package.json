@@ -4,6 +4,7 @@
   "description": "",
   "author": "",
   "private": true,
+  "type": "module",
   "license": "UNLICENSED",
   "engines": {
     "node": "24.x"
@@ -14,9 +15,9 @@
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",
-    "prisma:seed": "ts-node prisma/seed.ts",
+    "prisma:seed": "node --loader ts-node/esm prisma/seed.ts",
     "start:debug": "nest start --debug --watch",
-    "start:prod": "node dist/main",
+    "start:prod": "node dist/main.js",
     "postinstall": "prisma generate",
     "lint": "oxlint src/ test/",
     "test": "jest",
