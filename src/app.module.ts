@@ -11,6 +11,7 @@ import { PrismaModule } from './prisma/prisma.module.js';
       driver: ApolloDriver,
       autoSchemaFile: true,
       playground: false,
+      introspection: true,
       plugins: [ApolloServerPluginLandingPageLocalDefault()],
     }),
     PrismaModule,
