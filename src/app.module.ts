@@ -2,6 +2,9 @@ import { Module } from '@nestjs/common';
 import { GraphQLModule } from '@nestjs/graphql';
 import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 import { ApolloServerPluginLandingPageLocalDefault } from '@apollo/server/plugin/landingPage/default';
+
+import { AppController } from './app.controller.js';
+import { AppService } from './app.service.js';
 import { ProfileModule } from './profile/profile.module.js';
 import { PrismaModule } from './prisma/prisma.module.js';
 
@@ -17,5 +20,7 @@ import { PrismaModule } from './prisma/prisma.module.js';
     PrismaModule,
     ProfileModule,
   ],
+  controllers: [AppController],
+  providers: [AppService],
 })
 export class AppModule {}
